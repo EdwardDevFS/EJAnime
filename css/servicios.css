@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+}
+.about{
+    width: 100vw;
+    min-height: 400vh;
+    max-height: 800vh;
+    background-color: #041220;
+}
+a{
+    text-decoration: none;
+}
+
+a h2{
+    font-weight: bold;
+}
+.image_anime{
+    min-width: 40vw;
+    max-width: 100%;
+}
+.Netflix{
+    font-size: 40px;
+    color: rgb(184, 18, 18);
+}
+.Netflix:hover{
+    color: rgb(99, 10, 10);;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(238, 255, 0, 0.37);
+    font-weight: bold;
+}
+.asian:hover{
+    color: rgba(61, 65, 6, 0.863);
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(25, 0, 255, 0.527);
+
+}
+.txt{
+    margin: 0 100px;
+}
+span{
+    color: aqua;
+}
+
+p{
+    color:aliceblue;
+
+}
+footer{
+    background: #0b0b0c;
+    width: 100vw; 
+}
+.accordion-button{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+.contact-pe{
+
+    width: 40%;
+    color: white;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 5px;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.social-media-icon:hover{
+    background: rgba(66, 64, 64, 0.877);
+    color: rgba(255, 255, 255, 0.986);
+    padding: 0;
+
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+    
+}
+.brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder; 
+    font-size: 37px;
+    margin-left: 6.7rem;
+    color: #a30a0a;
+}
+.rights{
+    margin-left: 55px;
+    font-size: 30px;
+}
