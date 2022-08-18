@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap');
 
 *{
@@ -7,7 +6,41 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Poppins';
     --bs-body-font-size: 1.26rem;
+
+}
+.about{
+    width: 100vw;
+    min-height: 400vh;
+    max-height: 800vh;
+    background-color: #041220;
+}
+a{
+    text-decoration: none;
+}
+
+a h2{
+    font-weight: bold;
+}
+.image_anime{
+    min-width: 40vw;
+    max-width: 100%;
+}
+.Netflix{
+    font-size: 40px;
+    color: rgb(184, 18, 18);
+}
+.Netflix:hover{
+    color: rgb(99, 10, 10);;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(238, 255, 0, 0.37);
+    font-weight: bold;
+}
+.asian:hover{
+    color: rgba(61, 65, 6, 0.863);
 }
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,50 +48,24 @@ body{
     font-weight: bold;
     color: rgba(25, 0, 255, 0.527);
 }
+.txt{
+    margin: 0 100px;
+}
 span{
     color: aqua;
 }
 
-.altura{
-    height: 40rem;
-}
-h2,h4,p{
-    color: rgba(255, 255, 255, 0.788);
-}
-a{
-    font-weight: bold;
-}
-.carousel-caption {
-    top: 70%;
-}
+p{
+    color:aliceblue;
 
-.sel{
-    font-size: 3em;
-
-}
-.sel1{
-    font-size: 1.3em;
-}
-.subtitle{
-    color: rgb(238, 255, 0);
-}
-.accordion{
-    --bs-accordion-bg: #041220;
-    --bs-accordion-btn-color: #ffffff;
-    --bs-accordion-btn-bg: #0d0e0e;
-    --bs-accordion-active-color: #fbff00;
-    --bs-accordion-active-bg: #000000a6;
-    --bs-accordion-color: #ffffff;
-    --bs-accordion-border-color: #5c5b2e;
-}
-.seccion1{
-    background-color: #041220;
-    min-height: 68vh;
-    max-height: 400vh;
 }
 footer{
     background: #0b0b0c;
     width: 100vw; 
+}
+.accordion-button{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 .footer-content{
     display: flex;
@@ -112,31 +119,4 @@ footer{
 .rights{
     margin-left: 55px;
     font-size: 30px;
-}
-@media (max-width:952px){
-    .brand{
-        font-size: 32px;
-    }
-    footer{
-        max-height: 400px;
-    }
-    .contact-pe{
-        width: 100%;
-        height: 20px;
-        margin-bottom: 15px;
-        color: white;
-    }
-    .social-media{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-right: 50px;
-        margin-bottom: 5px;
-    }
-    .social-media-icon i{
-        font-size: 30px;
-        width: 50px;
-        line-height: 60px;
-        
-    }
 }
