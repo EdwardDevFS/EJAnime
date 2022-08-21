@@ -8,7 +8,7 @@
 body{
     font-family: 'Poppins';
     --bs-body-font-size: 1.26rem;
-
+    background-color: #041220;
 }
 .about{
     width: 100vw;
