@@ -237,7 +237,7 @@
   min-height: 100vh;
   max-height: 500vh;
 }
-* body .servicios .servicios img {
+* .servicios img {
   min-width: 100vw;
   max-width: 90vw;
   height: 90vh;
