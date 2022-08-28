@@ -71,33 +71,72 @@
   max-height: 400vh;
 }
 * body footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: #0b0b0c;
-  width: 100vw;
 }
 * body footer .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   padding-top: 12px;
   padding-bottom: 4px;
 }
-* body .contact-pe {
-  width: 40%;
-  color: white;
+@media (max-width: 968px) {
+  * body footer .footer-content {
+    flex-direction: column-reverse;
+  }
 }
-* body .social-media {
-  width: 50%;
+* body footer .footer-content .contact-pe {
+  color: white;
+  margin-left: 6.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 968px) {
+  * body footer .footer-content .contact-pe {
+    margin-left: 0;
+  }
+}
+* body footer .footer-content .contact-pe .brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 37px;
+  color: #a30a0a;
+}
+@media (max-width: 968px) {
+  * body footer .footer-content .contact-pe .brand {
+    font-size: 37px;
+  }
+}
+* body footer .footer-content .contact-pe .rights {
+  font-size: 30px;
+}
+@media (max-width: 968px) {
+  * body footer .footer-content .contact-pe .rights {
+    font-size: 25px;
+  }
+}
+* body footer .footer-content .social-media {
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
   margin-bottom: 5px;
+  align-items: center;
 }
-* body .social-media .social-media-icon i {
-  font-size: 30px;
-  line-height: 60px;
+@media (max-width: 968px) {
+  * body footer .footer-content .social-media {
+    margin: 14px 46px;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
 }
-* body .social-media .social-media-icon {
+* body footer .footer-content .social-media .social-media-icon {
   display: inline-block;
   margin-left: 20px;
   width: 60px;
@@ -107,21 +146,14 @@
   text-align: center;
   color: white;
 }
-* body .social-media .social-media-icon:hover {
+* body footer .footer-content .social-media .social-media-icon:hover {
   background: rgba(66, 64, 64, 0.877);
   color: rgba(255, 255, 255, 0.986);
   padding: 0;
 }
-* body .brand {
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  font-size: 37px;
-  margin-left: 6.7rem;
-  color: #a30a0a;
-}
-* body .rights {
-  margin-left: 55px;
+* body footer .footer-content .social-media .social-media-icon i {
   font-size: 30px;
+  line-height: 55px;
 }
 * body .principal {
   margin-bottom: 20px;
@@ -198,15 +230,21 @@
   margin: 30px 7em;
 }
 * body .about {
-  width: 100vw;
+  width: 100%;
   min-height: 400vh;
   max-height: 800vh;
-  background-color: #041220;
+  background-image: linear-gradient(to left, rgba(26, 25, 25, 0.8274509804) 0%, black 100%);
+  padding: 0 45px;
 }
 * body .about h2 {
   font-family: "Poppins", sans-serif;
   color: rgba(238, 255, 0, 0.37);
   font-weight: bold;
+}
+* body .about p {
+  margin-top: 15px;
+  padding-bottom: 2rem;
+  margin: 0;
 }
 * body .about .image_anime {
   min-width: 40vw;
@@ -221,10 +259,10 @@
 }
 * body .about .asian {
   font-size: 40px;
-  color: rgb(184, 18, 18);
+  color: rgb(98, 184, 18);
 }
 * body .about .asian:hover {
-  color: rgb(99, 10, 10);
+  color: rgb(10, 99, 25);
 }
 * body .about .title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -248,21 +286,11 @@
   .brand {
     font-size: 32px;
   }
-  footer {
-    max-height: 400px;
-  }
   .contact-pe {
-    width: 100%;
-    height: 20px;
-    margin-bottom: 15px;
-    color: white;
+    flex-direction: column;
   }
   .social-media {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-right: 50px;
-    margin-bottom: 5px;
+    justify-content: space-around;
   }
   .social-media-icon i {
     font-size: 30px;

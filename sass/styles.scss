@@ -61,61 +61,79 @@
             max-height: 400vh;
         }
         footer{
-            background: #0b0b0c;
-            width: 100vw; 
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: #0b0b0c; 
             .footer-content{
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: stretch;
                 flex-wrap: wrap;
                 padding-top: 12px;
                 padding-bottom: 4px;
-            }
-        }
-        .contact-pe{
-
-            width: 40%;
-            color: white;
-        }
-
-        .social-media{
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 50px;
-            margin-bottom: 5px;
-            .social-media-icon i{
-                font-size: 30px;
-                line-height: 60px;
-                
-            }
-            .social-media-icon{
-                display: inline-block;
-                margin-left: 20px;
-                width: 60px;
-                height: 60px;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                text-align: center;
-                color: white;
-                &:hover{
-                    background: rgba(66, 64, 64, 0.877);
-                    color: rgba(255, 255, 255, 0.986);
-                    padding: 0;
-                    
+                @media (max-width: 968px) { 
+                    flex-direction: column-reverse;   
                 }
+                .contact-pe{
+                    color: white;
+                    margin-left: 6.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @media (max-width: 968px) {
+                        margin-left: 0;
+                    }
+                    .brand{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: bolder; 
+                        font-size: 37px;
+                        color: #a30a0a;
+                        @media (max-width: 968px){
+                            font-size: 37px;
+                        }
+                    }
+                    .rights{
+                        font-size: 30px;
+                        @media (max-width: 968px){
+                            font-size: 25px;
+                            }
+                        }
+                    }  
+                    .social-media{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: 50px;
+                        margin-bottom: 5px;
+                        align-items: center;
+                        @media (max-width: 968px){
+                            margin: 14px 46px;
+                            align-items: stretch;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            margin-bottom: 20px;
+                        }
+                        .social-media-icon{
+                            display: inline-block;
+                            margin-left: 20px;
+                            width: 60px;
+                            height: 60px;
+                            border: 2px solid #fff;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: white;
+                            &:hover{
+                                background: rgba(66, 64, 64, 0.877);
+                                color: rgba(255, 255, 255, 0.986);
+                                padding: 0;
+                            }  
+                            i{
+                                font-size: 30px;
+                                line-height: 55px;
+                            }
+                        }
+                    }
             }
-        }
-        .brand{
-            font-family: 'Poppins', sans-serif;
-            font-weight: bolder; 
-            font-size: 37px;
-            margin-left: 6.7rem;
-            color: #a30a0a;
-        }
-        .rights{
-            margin-left: 55px;
-            font-size: 30px;
         }
         /*
         ESTILOS DE ANIME.HTML
@@ -133,6 +151,7 @@
                 color: #ff0000;
                 margin-bottom: 15px;
             }
+            
             
             .sel{
                 background: transparent;
@@ -220,14 +239,20 @@
         */
 
         .about{
-            width: 100vw;
+            width: 100%;
             min-height: 400vh;
             max-height: 800vh;
-            background-color: #041220;
+            background-image: linear-gradient(to left, #1a1919d3 0%, black 100%);
+            padding: 0 45px;    
             h2{
                 font-family: 'Poppins', sans-serif;
                 color: rgba(238, 255, 0, 0.37);
                 font-weight: bold;
+            }
+            p{
+                margin-top: 15px;
+                padding-bottom: 2rem;
+                margin: 0;
             }
             
             .image_anime{
@@ -243,9 +268,9 @@
             }
             .asian{
                 font-size: 40px;
-                color: rgb(184, 18, 18);
+                color: rgb(98, 184, 18);
                 &:hover{
-                    color: rgb(99, 10, 10);;
+                    color: rgb(10, 99, 25);;
                 }
             }
             .title{
@@ -278,20 +303,14 @@
         font-size: 32px;
     }
     footer{
-        max-height: 400px;
+        
     }
     .contact-pe{
-        width: 100%;
-        height: 20px;
-        margin-bottom: 15px;
-        color: white;
+        
+        flex-direction: column;
     }
     .social-media{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-right: 50px;
-        margin-bottom: 5px;
+        justify-content: space-around;
     }
     .social-media-icon i{
         font-size: 30px;
