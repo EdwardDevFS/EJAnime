@@ -279,22 +279,4 @@
   min-width: 100vw;
   max-width: 90vw;
   height: 90vh;
-}
-
-/* MEDIA QUERIES*/
-@media (max-width: 952px) {
-  .brand {
-    font-size: 32px;
-  }
-  .contact-pe {
-    flex-direction: column;
-  }
-  .social-media {
-    justify-content: space-around;
-  }
-  .social-media-icon i {
-    font-size: 30px;
-    width: 50px;
-    line-height: 60px;
-  }
 }/*# sourceMappingURL=styles.css.map */

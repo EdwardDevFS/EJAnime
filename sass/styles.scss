@@ -1,3 +1,4 @@
+@import 'estilos';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -295,27 +296,5 @@
         min-width: 100vw;
         max-width: 90vw;
         height: 90vh;
-    }
-}
-/* MEDIA QUERIES*/
-@media (max-width:952px){
-    .brand{
-        font-size: 32px;
-    }
-    footer{
-        
-    }
-    .contact-pe{
-        
-        flex-direction: column;
-    }
-    .social-media{
-        justify-content: space-around;
-    }
-    .social-media-icon i{
-        font-size: 30px;
-        width: 50px;
-        line-height: 60px;
-        
     }
 }
