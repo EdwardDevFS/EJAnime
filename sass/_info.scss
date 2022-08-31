@@ -1,0 +1,39 @@
+
+.about{
+    width: 100%;
+    min-height: 400vh;
+    max-height: 800vh;
+    background-image: linear-gradient(to left, #1a1919d3 0%, black 100%);
+    padding: 0 45px;    
+    h2{
+        font-family: 'Poppins', sans-serif;
+
+        font-weight: bold;
+    }
+    p{
+        margin-top: 15px;
+        padding-bottom: 2rem;
+        margin: 0;
+    }
+}
+.image_anime{
+    min-width: 40vw;
+    max-width: 100%;
+}
+.Netflix{
+    font-size: 40px;
+    color: rgb(184, 18, 18);
+    &:hover{
+        color: rgb(99, 10, 10);;
+    }
+}
+.asian{
+    @extend .Netflix;           //EXTEND
+    color: rgb(98, 184, 18);
+    &:hover{
+        color: rgb(10, 99, 25);;
+    }
+}
+.view{
+    @extend .asian;           //EXTEND
+}
