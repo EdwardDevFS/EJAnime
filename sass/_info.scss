@@ -7,7 +7,6 @@
     padding: 0 45px;    
     h2{
         font-family: 'Poppins', sans-serif;
-
         font-weight: bold;
     }
     p{
@@ -15,6 +14,12 @@
         padding-bottom: 2rem;
         margin: 0;
     }
+    a{
+        text-decoration: none;
+    }
+}
+.Title-info{
+    color: rgb(255, 0, 0);
 }
 .image_anime{
     min-width: 40vw;
@@ -35,5 +40,6 @@
     }
 }
 .view{
-    @extend .asian;           //EXTEND
+    @extend .asian;
+    color: rgb(54, 102, 9);           //EXTEND
 }

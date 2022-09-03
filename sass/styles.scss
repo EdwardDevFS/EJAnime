@@ -13,6 +13,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #041220;
     --bs-body-font-size: 1.26rem;
@@ -35,9 +36,58 @@ span{
 h2,h4,p{
     color: rgba(255, 255, 255, 0.788);
 }
-a{
-    text-decoration: none;
-    font-weight: bold;
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.7s;
+    background-color:#10161d ;
+        
+}   
+header.down{
+    background-color: #56657383;
+    padding: 0; 
+    &:hover{
+        background-color: #17202A;
+    }
+}
+
+.nav-link{
+    padding: 0;
+}
+.ul-nav{
+    a{
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+        margin: 0 10px;
+        
+        &:after{
+            content:"";
+            position: absolute;
+            background-color: #ce1616;
+            height: 3px;
+            width: 0px;
+            left: 0;
+            bottom: 0px;
+            transition: 0.3s;
+            
+        }
+        &:hover{
+            color: rgb(255, 255, 255);
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+.principal{
+    margin-top: 80px;
+    
 }
 .carousel-caption {
     top: 70%;
@@ -73,57 +123,7 @@ footer{
     flex-direction: column;
     background: #0b0b0c; 
 }
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding-top: 12px;
-    padding-bottom: 4px;
-    @media (max-width: 968px) { 
-        flex-direction: column-reverse;   
-    }
-}
-.contact-pe{
-        color: white;
-        margin-left: 6.7rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @media (max-width: 968px) {
-            margin-left: 0;
-        }
-    }
-.brand{
-        font-family: 'Poppins', sans-serif;
-        font-weight: bolder; 
-        font-size: 37px;
-        color: #a30a0a;
-        @media (max-width: 968px){
-            font-size: 37px;
-        }
-    }
-.rights{
-    font-size: 30px;
-    @media (max-width: 968px){
-        font-size: 25px;
-    }
-}
-    
-.social-media{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-    margin-bottom: 5px;
-    align-items: center;
-    @media (max-width: 968px){
-        margin: 14px 46px;
-        align-items: stretch;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
-    }
-}
+
 @mixin IconSize ($w, $h) {             //MIXIN CON PARAMETROS
     width: $w;
     height: $h;

@@ -17,18 +17,57 @@
     display: inline-block;
     overflow: hidden;
     position: relative;
+    text-align: center;
+    align-items: center;
+    &:hover img{
+        transform: scale(1.2);
+        opacity: .2;   
+    }
+    &:hover .darling{
+        visibility: visible;
+        margin-top: 15px; 
+    }
+    &:hover .darling-t{
+        margin: 0px 40px;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 1s transform,  1s opacity ease-out;
+        opacity: 1;
+        display: flex;
+        object-fit: cover;
+        text-align: center;   
+        align-items: center;  
+    }
+    
 }
-.sel-img{
-    position: relative;
-    transition: 1s transform,  1s opacity;
-    display: block;
-    opacity: 1;
+.darling{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    margin-top: -40px;
+    text-align: center;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+    
+    
 }
-.sel:hover .sel-img{
-    transform: scale(1.2);
-    opacity: .2
+.darling-t{
+    background-color: rgba(255, 255, 255, 0.116);
+    text-align: left;
+    margin: 180px 40px 0px;
+    padding: 10px 15px 10px 15px;
+    color: #fff;
+    transition: all 500ms ease-out;
 }
-
+.genero{
+    color: #fff;
+}
         
         
         
