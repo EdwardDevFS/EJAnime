@@ -1,22 +1,27 @@
+
+
+
 .footer-content{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: wrap;
+    
     padding-top: 12px;
     padding-bottom: 4px;
     @media (max-width: 968px) { 
-        flex-direction: column-reverse;   
+        margin-left: 30px;   
     }
 }
 .contact-pe{
     color: white;
-    margin-left: 6.7rem;
+    margin-left: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     @media (max-width: 968px) {
-        margin-left: 0;
+        margin-left: 0rem;
+        align-items: flex-start;
+        
     }
 }
 .brand{
@@ -25,13 +30,13 @@
     font-size: 37px;
     color: #a30a0a;
     @media (max-width: 968px){
-        font-size: 37px;
+        font-size: 30px;
     }
 }
 .rights{
-    font-size: 30px;
+    font-size: 20px;
     @media (max-width: 968px){
-        font-size: 25px;
+        font-size: 15px;
     }
 }
     
@@ -41,10 +46,20 @@
     margin-right: 50px;
     margin-bottom: 5px;
     align-items: center;
+    
     @media (max-width: 968px){
         margin: 14px 46px;
         align-items: stretch;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 735px){
+        margin: 14px 46px;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin-bottom: 20px;
     }
