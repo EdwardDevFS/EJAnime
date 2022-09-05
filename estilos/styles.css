@@ -48,6 +48,7 @@
 @media (max-width: 968px) {
   .rights {
     font-size: 15px;
+    text-align: left;
   }
 }
 
@@ -60,22 +61,19 @@
 }
 @media (max-width: 968px) {
   .social-media {
-    margin: 14px 46px;
+    margin-top: 20px;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 735px) {
   .social-media {
-    margin: 14px 46px;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 18px;
   }
 }
 
@@ -388,7 +386,7 @@ header.down:hover {
   margin: 180px 0px 20px;
   padding: 10px 15px 10px 15px;
 }
-@media (min-width: 968px) {
+@media (max-width: 968px) {
   .konosuba-h {
     position: absolute;
     right: 0;
@@ -506,12 +504,24 @@ header.down:hover {
   color: #FDFEFE;
   letter-spacing: 0.5px;
 }
+@media (max-width: 968px) {
+  .title-s {
+    font-size: 1.5em;
+  }
+}
 
 .img-rend {
   width: 80px;
   margin-left: 25px;
   position: relative;
   top: -13px;
+}
+@media (max-width: 968px) {
+  .img-rend {
+    width: 75px;
+    margin-left: -23px;
+    margin-right: 24px;
+  }
 }
 
 .carousel-caption {

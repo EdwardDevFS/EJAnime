@@ -37,6 +37,7 @@
     font-size: 20px;
     @media (max-width: 968px){
         font-size: 15px;
+        text-align: left;
     }
 }
     
@@ -48,19 +49,17 @@
     align-items: center;
     
     @media (max-width: 968px){
-        margin: 14px 46px;
+        margin-top: 20px;
         align-items: stretch;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-bottom: 20px;
+        
     }
     @media (max-width: 735px){
-        margin: 14px 46px;
-        align-items: stretch;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
+        justify-content: flex-end;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 18px;
     }
 }

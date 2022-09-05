@@ -223,7 +223,7 @@ header.down{
     right: -300px;
     margin: 180px 0px 20px; //309px
     padding: 10px 15px 10px 15px;
-    @media (min-width: 968px){
+    @media (max-width: 968px){
         position: absolute;
         right: 0;
         margin: 180px 0px 20px;
@@ -344,7 +344,10 @@ header.down{
     font-size: 2em;
     font-weight: bold;
     color: #FDFEFE;
-    letter-spacing: .5px; 
+    letter-spacing: .5px;
+    @media (max-width: 968px){
+        font-size: 1.5em;
+    } 
 }
 
 .img-rend{
@@ -352,6 +355,11 @@ header.down{
     margin-left: 25px;
     position: relative;
     top: -13px;
+    @media (max-width: 968px){
+        width: 75px;
+        margin-left: -23px;
+        margin-right: 24px;
+    } 
 }
 
 .carousel-caption {
