@@ -86,8 +86,8 @@
   width: 100%;
   min-height: 400vh;
   max-height: 800vh;
-  background-image: linear-gradient(to left, rgba(26, 25, 25, 0.8274509804) 0%, black 100%);
-  padding: 0 45px;
+  background-color: #29323c;
+  padding: 45px;
 }
 .about h2 {
   font-family: "Poppins", sans-serif;
@@ -388,7 +388,6 @@ header.down:hover {
 }
 @media (max-width: 968px) {
   .konosuba-h {
-    position: absolute;
     right: 0;
     margin: 180px 0px 20px;
     padding: 10px 15px 10px 15px;
