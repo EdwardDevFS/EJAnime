@@ -1,10 +1,18 @@
 .servicios{
-    background-color: #041220;
+    background-color: #29323c;
     min-height: 100vh;
     max-height: 500vh;
-    img{
-        min-width: 100vw;
-        max-width: 90vw;
-        height: 90vh;
+    text-decoration: none;
+    padding:  75px 0px;  // 75px 34px 8px 34px Mobile
+    @media (max-width: 768px) {
+        padding: 75px 34px 8px 34px;
+        
     }
+    img{
+        min-width: 19vw;
+        max-width: 100%;
+        width:100vw; 
+        height: 85vh;
+    }
+    
 }
