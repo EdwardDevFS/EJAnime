@@ -1,0 +1,23 @@
+.nose{
+    padding:  90px;
+}
+.preguntas{
+    width: 100vw;
+    height:100vh;
+    padding:  90px;  // 75px 34px 8px 34px Mobile
+    
+    display:flex;
+    color: #fff;
+    @media (max-width: 768px) {
+        padding: 75px 34px 8px 34px;
+        
+    }
+    input,select{
+        border: none;
+    }
+    span{
+        padding: 0;
+        border: 2px solid;
+        background-color: #212529;
+    }
+}

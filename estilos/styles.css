@@ -77,9 +77,29 @@
   }
 }
 
+.nose {
+  padding: 90px;
+}
+
 .preguntas {
   width: 100vw;
   height: 100vh;
+  padding: 90px;
+  display: flex;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .preguntas {
+    padding: 75px 34px 8px 34px;
+  }
+}
+.preguntas input, .preguntas select {
+  border: none;
+}
+.preguntas span {
+  padding: 0;
+  border: 2px solid;
+  background-color: #212529;
 }
 
 .about {
@@ -280,7 +300,7 @@ header {
 }
 
 header.down {
-  opacity: 0;
+  opacity: 0.2;
   padding: 0px;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
