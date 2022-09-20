@@ -3,9 +3,9 @@
     min-height: 100vh;
     max-height: 500vh;
     text-decoration: none;
-    padding:  75px 0px;  // 75px 34px 8px 34px Mobile
+    padding:  72px 0px;  // 75px 34px 8px 34px Mobile
     @media (max-width: 768px) {
-        padding: 75px 34px 8px 34px;
+        padding: 72px 0px 8px 0px;
         
     }
     img{
