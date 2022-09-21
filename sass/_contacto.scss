@@ -1,23 +1,177 @@
-.nose{
-    padding:  90px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+.nose{   
+    padding: 70px 0 0;
+    
+}
+.form-cont{
+    width: 100%;
+    position: relative;
+    height: 35rem;
+    -webkit-box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    -moz-box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    @media (max-width: 768px) {
+        visibility: hidden;
+        display: none;
+}
+}
+.query-img{
+    width: 100%;
+    position: relative;
+    height: 19rem;
+    -webkit-box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    -moz-box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    box-shadow: -2px 11px 10px -4px rgba(11,26,24,1);
+    visibility: hidden;
+    display:none;
+    @media (max-width: 768px){
+        height: 56rem;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        align-content: center;
+        
+    }
 }
 .preguntas{
-    width: 100vw;
-    height:100vh;
-    padding:  90px;  // 75px 34px 8px 34px Mobile
-    
+    width: 100%;
+    padding: 100px 80px;  // 75px 34px 8px 34px Mobile
+    position: absolute;
+    top: 50px;
     display:flex;
+    justify-content: center;
     color: #fff;
     @media (max-width: 768px) {
         padding: 75px 34px 8px 34px;
-        
+        margin-top: 20px;
     }
     input,select{
         border: none;
+        @media (max-width: 768px){
+            border: 2px solid #dcf83c7a;
+        }
     }
     span{
         padding: 0;
         border: 2px solid;
         background-color: #212529;
+    }
+    
+}
+.accordion{
+    --bs-accordion-bg: #041220d9;
+    --bs-accordion-btn-color: #3cf8a0;
+    --bs-accordion-btn-bg: #0d0e0e82;
+    --bs-accordion-active-color: #3cf8a0;
+    --bs-accordion-active-bg: #0000006e;
+    --bs-accordion-color: #baf4ff;
+    --bs-accordion-border-color: #5c5b2e00;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    
+    border-radius: 8px;
+}
+.preguntas-frecuentes{
+    
+    
+    width: 100%;
+    height: 53rem;
+    @media (max-width: 768px) {
+        height: 77rem;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        @media (max-width: 768px){
+            width: 100%;
+        }
+    
+    }
+    
+    
+}
+.img1{
+    height: 52rem;
+    
+    position: absolute;
+    @media (max-width: 768px){
+        display: none;
+        visibility: hidden;
+    }
+}
+.quert-img1{
+    
+    height: 52rem;
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    
+    @media (min-width: 768px){
+        display: flex;
+        visibility: visible;
+    }
+}
+.accordion{
+    position: relative;
+    margin: 0px 26px 5px 38rem;
+    bottom: 36.8rem;
+    @media (max-width: 768px) {
+        position: absolute;
+        
+        top: 67.8rem;
+        margin: 0px 26px 5px 26px;
+    }
+}
+.subtitle{
+    position: absolute;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3cf8a0;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-left: 5.5rem;
+    bottom: -35rem;
+    background-color: #0000008c;
+    padding: 30px;
+    @media (max-width: 768px){
+        margin-left: 5.5rem;
+        bottom: -20rem;
+        font-size: 2rem;
+        padding: 10px 15px;
+        visibility: hidden;
+    }
+}
+.query{
+    @extend .subtitle;
+    visibility: hidden;
+    margin-left: 0rem;
+    margin-bottom: -6.8rem;
+    @media (max-width: 768px){
+        visibility: visible;
+    }
+    
+}
+.subtitle1{
+    position: absolute;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3cf8a0;
+    background-color: #0000008c;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 30px;
+    margin-left: 38rem;
+    margin-top: 16.5rem;
+    color: #d6f83c;
+    @media (max-width: 768px){
+        top: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        font-size: 2rem;
+        padding: 10px 15px;
+
     }
 }

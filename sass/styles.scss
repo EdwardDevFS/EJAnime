@@ -17,6 +17,19 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+::-webkit-scrollbar{
+	width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+	background: #dddddd00;
+;    
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(34, 221, 250, 0.596);  
+    
+    
+}
 
 body{
     background-color: #29323c;
@@ -399,18 +412,8 @@ header.down{
 .sel1{
     font-size: 1.3em;
 }
-.subtitle{
-    color: rgb(238, 255, 0);
-}
-.accordion{
-    --bs-accordion-bg: #041220;
-    --bs-accordion-btn-color: #ffffff;
-    --bs-accordion-btn-bg: #0d0e0e;
-    --bs-accordion-active-color: #fbff00;
-    --bs-accordion-active-bg: #000000a6;
-    --bs-accordion-color: #ffffff;
-    --bs-accordion-border-color: #5c5b2e;
-}
+
+
 .seccion1{
     background-color: #041220;
     min-height: 68vh;
