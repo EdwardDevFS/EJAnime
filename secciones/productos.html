@@ -26,6 +26,7 @@
 <body>
     <!--data-bs-toggle="modal" data-bs-target="#staticBackdrop"-->
     <header>
+      <audio src="../img/audio1.mp3" preload autoplay></audio>
       <nav class="navbar navbar-dark navbar-expand-lg ">
           <div class="container-fluid">
             <a class="navbar-brand ms-5" href="../index.html"><h2 class="title">EJ <span>ANIME</span></h2></a>
@@ -51,28 +52,28 @@
           </div>
       </nav>
     </header>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Lo sentimos...</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">Aún no tenemos contenido disponible.</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
-            </div>
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content text-bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title title ms-2" id="staticBackdropLabel">EJ <span>ANIME</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Aún no tenemos contenido disponible.</div><br>
+          <div class="modal-footer">
+            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Entendido</button>
           </div>
         </div>
       </div>
+    </div>
       <main>
         <section class="contenedor">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 
-                <video src="../img/anime.mp4" class="d-block w-100" preload="auto" muted loop autoplay></video>
+                <video src="../img/anime.mp4" class="d-block w-100" preload="auto" muted loop autoplay></video> <!--muted-->
               </div>
               <div class="carousel-item">
                 <img src="https://cdna.artstation.com/p/marketplace/presentation_assets/000/643/222/large/file.jpg?1608035305" class="d-block w-100" alt="...">
@@ -93,8 +94,6 @@
         </section>
 
         <section class="productos">
-          
-          
           <aside class="aside-prod-nav">
             <h2 class="text-center subtitulo">PRODUCTOS</h2>
             <div class="prod-nav">
@@ -104,56 +103,64 @@ asd
           <div class="row row-cols-1 row-cols-md-3 g-3">
             <div class="col">
               
-              <div class="card text-bg-dark mb-3">
+              <div class="card text-white mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="https://c4.wallpaperflare.com/wallpaper/159/294/541/kono-subarashii-sekai-ni-shukufuku-wo-darkness-konosuba-aqua-konosuba-megumin-wallpaper-preview.jpg" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Konosuba</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="card-title text-center">Konosuba!</h3>
+                  
+                </div>
+              </div>
+              
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="https://i.pinimg.com/736x/a0/28/80/a028809951d6286a85e8f68e2656b245.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h4 class="card-title text-center">Kimetsu no Yaiba</h4>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card text-bg-dark mb-3">
-                <img src="https://i.pinimg.com/736x/a0/28/80/a028809951d6286a85e8f68e2656b245.jpg" class="card-img-top" alt="...">
+              <div class="card text-bg-dark mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="https://i.blogs.es/7944c9/attack-on-titan-television-paga-mexico-bitme-televisa-febrero/840_560.jpeg" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Kimetsu no Yaiba</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="card-title text-center">Shingeki no Kyojin</h4>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card text-bg-dark mb-3">
-                <img src="https://i.pinimg.com/736x/a0/28/80/a028809951d6286a85e8f68e2656b245.jpg" class="card-img-top" alt="...">
+              <div class="card text-bg-dark mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="https://www.anmosugoi.com/wp-content/uploads/2021/07/Sentouin-Hakenshimasu-min-4.jpg" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Kimetsu no Yaiba</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="card-title text-center">Sentouin Hakenshimasu!</h4>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card text-bg-dark mb-3">
-                <img src="https://i.pinimg.com/736x/a0/28/80/a028809951d6286a85e8f68e2656b245.jpg" class="card-img-top" alt="...">
+              <div class="card text-bg-dark mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="https://i0.wp.com/www.generacionfriki.es/wp-content/uploads/2021/05/Kaguya-sama-wa-Kokurasetai-Anime-Generacion-Friki-PORTADA.jpg" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Kimetsu no Yaiba</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="card-title text-center">Kaguya-sama: Love is War</h4>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card text-bg-dark mb-3">
-                <img src="https://i0.wp.com/www.generacionfriki.es/wp-content/uploads/2021/05/Kaguya-sama-wa-Kokurasetai-Anime-Generacion-Friki-PORTADA.jpg" class="card-img-top" alt="...">
+              <div class="card text-bg-dark mb-3 card-prod">
+                <a class="Prod-anime" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="https://coolthemestores.com/wp-content/uploads/2022/03/overlord-wallpaper-background.jpg" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Kaguya-sama, love is war</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-bg-dark mb-3">
-                <img src="https://coolthemestores.com/wp-content/uploads/2022/03/overlord-wallpaper-background.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Overlord</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="card-title text-center">Overlord</h3>
                 </div>
               </div>
             </div>

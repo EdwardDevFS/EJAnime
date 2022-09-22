@@ -405,6 +405,37 @@
   object-fit: cover;
 }
 
+.card {
+  --bs-card-title-spacer-y: 0.1rem;
+  --bs-card-spacer-y: .5rem;
+  --bs-card-border-radius: 1rem;
+}
+
+.card-title {
+  font-family: open sans, sans-serif;
+  font-weight: 700;
+}
+
+.card-prod {
+  overflow: hidden;
+  background-color: rgba(8, 7, 7, 0.28);
+}
+.card-prod img {
+  width: 100%;
+  position: relative;
+  transition: 1s transform, 1s opacity ease-out;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.Prod-anime {
+  overflow: hidden;
+}
+.Prod-anime:hover img {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
 .servicios {
   background-color: #29323c;
   min-height: 100vh;
@@ -693,7 +724,7 @@ header.down:hover {
 
 .sentouin-h {
   margin: 280px 40px 0px;
-  padding: 15px 20px 40px 20px;
+  padding: 15px 20px 10px 20px;
 }
 
 .genero {
