@@ -179,6 +179,7 @@
 
 .img1 {
   height: 52rem;
+  width: 100%;
   position: absolute;
 }
 @media (max-width: 768px) {
@@ -248,7 +249,7 @@
   }
 }
 
-.subtitle1 {
+.subtitle1, .subtitulo {
   position: absolute;
   font-family: "Roboto Condensed", sans-serif;
   color: #3cf8a0;
@@ -262,7 +263,7 @@
   color: #d6f83c;
 }
 @media (max-width: 768px) {
-  .subtitle1 {
+  .subtitle1, .subtitulo {
     top: 0;
     margin-top: 1rem;
     margin-left: 0rem;
@@ -380,14 +381,28 @@
 .contenedor {
   padding: 70px 0px;
 }
-.contenedor img {
+.contenedor img, .contenedor video {
+  width: 100%;
   height: 37.5rem;
+  object-fit: cover;
 }
 
 .productos {
-  min-height: 100vh;
-  max-height: 700vh;
-  margin: 30px 7em;
+  min-height: 80vh;
+  max-height: 698vh;
+  margin: 30px 2em;
+  display: flex;
+  gap: 20px;
+}
+
+.subtitulo {
+  margin: 0;
+  position: relative;
+  height: 35rem;
+}
+
+.img-fluid {
+  object-fit: cover;
 }
 
 .servicios {
