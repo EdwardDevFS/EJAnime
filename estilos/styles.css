@@ -117,7 +117,7 @@
     align-content: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .query-img {
     height: 63rem;
   }
@@ -181,7 +181,7 @@
 }
 @media (max-width: 768px) {
   .preguntas-frecuentes {
-    height: 60rem;
+    height: 70rem;
     display: flex;
     justify-content: center;
   }
@@ -191,7 +191,7 @@
     height: 72rem;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .preguntas-frecuentes {
     height: 101.5rem;
   }
@@ -253,10 +253,13 @@
   .accordion {
     position: absolute;
     top: 70.8rem;
-    margin: 0px 26px 5px 26px;
+    margin: 0px 15px 5px 15px;
+    padding-right: 12px;
+    height: 50rem;
+    overflow: auto;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .accordion {
     top: 76.8rem;
     margin: 0px 14px 10px;
@@ -272,19 +275,22 @@
   letter-spacing: 3px;
   font-weight: bold;
   margin-left: 5.5rem;
+  top: 63rem;
   background-color: rgba(0, 0, 0, 0.5490196078);
   padding: 30px;
 }
 @media (max-width: 1200px) {
   .subtitle {
-    bottom: 12rem;
-    margin-left: 44.5rem;
+    margin-bottom: 28rem;
+    top: 46rem;
+    right: 6.5rem;
   }
 }
 @media (max-width: 992px) {
   .subtitle {
-    bottom: 11.5rem;
-    margin-left: 32.5rem;
+    margin-bottom: 28rem;
+    top: 46rem;
+    right: 6.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -296,13 +302,13 @@
 
 .query {
   position: absolute;
-  display: block;
+  display: none;
   font-family: "Roboto Condensed", sans-serif;
   color: #3cf8a0;
   font-size: 3.5rem;
   letter-spacing: 3px;
   font-weight: bold;
-  bottom: -35rem;
+  top: 61rem;
   background-color: rgba(0, 0, 0, 0.5490196078);
   padding: 30px;
   visibility: hidden;
@@ -312,21 +318,24 @@
 @media (max-width: 768px) {
   .query {
     visibility: visible;
-    margin-bottom: 34.2rem;
-    font-size: 3rem;
+    display: block;
+    top: 63rem;
+    padding: 11px;
+    margin-bottom: 0px;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 576px) {
   .query {
-    margin-bottom: 35rem;
+    top: 63rem;
     font-size: 2rem;
-    padding: 10px 15px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .query {
-    margin-bottom: 4.2rem;
-    font-size: 2rem;
+    margin-bottom: -4.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -642,9 +651,10 @@
   text-decoration: none;
   padding: 72px 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .servicios {
-    padding: 72px 0px 8px 0px;
+    min-height: 0vh;
+    padding: 72px 0px 10px;
   }
 }
 .servicios img {
@@ -652,6 +662,50 @@
   max-width: 100%;
   width: 100vw;
   height: 85vh;
+}
+@media (max-width: 1200px) {
+  .servicios img {
+    height: 80vh;
+  }
+}
+@media (max-width: 576px) {
+  .servicios img {
+    height: 60vh;
+  }
+}
+
+.col-s {
+  width: 33.3%;
+}
+@media (max-width: 992px) {
+  .col-s {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .col-s {
+    width: 100%;
+  }
+}
+
+.row-s {
+  text-align: justify;
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .row-s {
+    margin: 0 7rem;
+  }
+}
+@media (max-width: 576px) {
+  .row-s {
+    margin: 20px;
+  }
+}
+.row-s h5 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 * {
@@ -706,7 +760,12 @@ span {
 }
 @media (max-width: 968px) {
   .altura {
-    height: 22rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 576px) {
+  .altura {
+    height: 20rem;
   }
 }
 
@@ -809,7 +868,7 @@ header.down:hover {
   margin-bottom: 15px;
 }
 
-.sel-img, .media-img, .konosuba-img {
+.sel-img, .media-img, .konosuba-img, .sel-img-k {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -819,65 +878,69 @@ header.down:hover {
   text-align: center;
   align-items: center;
 }
-.sel-img:hover img, .media-img:hover img, .konosuba-img:hover img {
+.sel-img:hover img, .media-img:hover img, .konosuba-img:hover img, .sel-img-k:hover img {
   transform: scale(1.2);
   opacity: 0.2;
 }
-.sel-img:hover .darling, .media-img:hover .darling, .konosuba-img:hover .darling, .sel-img:hover .tantei, .media-img:hover .tantei, .konosuba-img:hover .tantei, .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba {
+.sel-img:hover .darling, .media-img:hover .darling, .konosuba-img:hover .darling, .sel-img:hover .tantei, .media-img:hover .tantei, .konosuba-img:hover .tantei, .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba, .sel-img-k:hover .darling, .sel-img-k:hover .tantei, .sel-img-k:hover .sentouin, .sel-img-k:hover .konosuba {
   visibility: visible;
   margin-top: 15px;
 }
 @media (max-width: 968px) {
-  .sel-img:hover .darling, .media-img:hover .darling, .konosuba-img:hover .darling, .sel-img:hover .tantei, .media-img:hover .tantei, .konosuba-img:hover .tantei, .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba {
+  .sel-img:hover .darling, .media-img:hover .darling, .konosuba-img:hover .darling, .sel-img:hover .tantei, .media-img:hover .tantei, .konosuba-img:hover .tantei, .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba, .sel-img-k:hover .darling, .sel-img-k:hover .tantei, .sel-img-k:hover .sentouin, .sel-img-k:hover .konosuba {
     margin-top: 8px;
   }
 }
-.sel-img:hover .darling-h, .media-img:hover .darling-h, .konosuba-img:hover .darling-h, .sel-img:hover .tantei-h, .media-img:hover .tantei-h, .konosuba-img:hover .tantei-h, .sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h, .sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h {
+.sel-img:hover .darling-h, .media-img:hover .darling-h, .konosuba-img:hover .darling-h, .sel-img:hover .tantei-h, .media-img:hover .tantei-h, .konosuba-img:hover .tantei-h, .sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h, .sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h, .sel-img-k:hover .darling-h, .sel-img-k:hover .tantei-h, .sel-img-k:hover .sentouin-h, .sel-img-k:hover .konosuba-h {
   margin: 0px 40px;
 }
-.sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba {
+.sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba, .sel-img-k:hover .konosuba {
   margin-top: 122px;
 }
 @media (max-width: 968px) {
-  .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba {
+  .sel-img:hover .konosuba, .media-img:hover .konosuba, .konosuba-img:hover .konosuba, .sel-img-k:hover .konosuba {
     margin-top: 10px;
   }
 }
-.sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h {
+.sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h, .sel-img-k:hover .konosuba-h {
   margin: 19px 27px 0px;
   right: 0px;
 }
 @media (max-width: 968px) {
-  .sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h {
+  .sel-img:hover .konosuba-h, .media-img:hover .konosuba-h, .konosuba-img:hover .konosuba-h, .sel-img-k:hover .konosuba-h {
     margin: 0px 40px;
   }
 }
-.sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin {
+.sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img-k:hover .sentouin {
   margin-top: 25px;
 }
 @media (max-width: 968px) {
-  .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin {
+  .sel-img:hover .sentouin, .media-img:hover .sentouin, .konosuba-img:hover .sentouin, .sel-img-k:hover .sentouin {
     margin-top: 10px;
   }
 }
-.sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h {
+.sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h, .sel-img-k:hover .sentouin-h {
   margin-top: 15px;
 }
 @media (max-width: 968px) {
-  .sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h {
+  .sel-img:hover .sentouin-h, .media-img:hover .sentouin-h, .konosuba-img:hover .sentouin-h, .sel-img-k:hover .sentouin-h {
     margin: 0px 40px;
     padding: 12.5px 20px 10px 20px;
   }
 }
-.sel-img img, .media-img img, .konosuba-img img {
+.sel-img img, .media-img img, .konosuba-img img, .sel-img-k img {
   width: 100%;
   height: 100%;
   position: relative;
   transition: 1s transform, 1s opacity ease-out;
   opacity: 1;
-  object-fit: cover;
+  object-fit: fill;
   text-align: center;
   align-items: center;
+}
+
+.sel-img-k img {
+  object-fit: inherit;
 }
 
 .darling, .tantei, .sentouin, .konosuba {
@@ -899,6 +962,10 @@ header.down:hover {
   padding: 12.5px 20px 10px 20px;
   color: #fff;
   transition: all 500ms ease-out;
+}
+
+.konosuba img {
+  object-fit: cover;
 }
 
 .konosuba-h {
@@ -983,6 +1050,9 @@ header.down:hover {
 .media-img {
   visibility: hidden;
 }
+.media-img img {
+  object-fit: cover;
+}
 @media (max-width: 968px) {
   .media-img {
     visibility: visible;
@@ -1053,6 +1123,12 @@ header.down:hover {
 .carousel-caption:hover {
   transform: scale(1.05);
   background-color: rgba(0, 0, 0, 0.856);
+}
+@media (max-width: 992px) {
+  .carousel-caption {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .cortos {

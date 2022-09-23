@@ -59,7 +59,10 @@ span{
 .altura{
     height:37rem;
     @media (max-width: 968px){
-        height: 22rem;
+        height: 30rem;
+    }
+    @media (max-width: 576px){
+        height: 20rem;
     }
 }
 h2,h4,p{
@@ -216,9 +219,16 @@ header.down{
         position: relative;
         transition: 1s transform,  1s opacity ease-out;
         opacity: 1;
-        object-fit: cover;
+        object-fit: fill;
         text-align: center;   
         align-items: center;  
+    }
+    
+}
+.sel-img-k{
+    @extend .sel-img;
+    img{
+        object-fit: inherit;
     }
     
 }
@@ -246,6 +256,10 @@ header.down{
 }
 .konosuba{
     @extend .darling;
+    img{
+        object-fit: cover;
+    }
+    
 }
 .konosuba-h{
     @extend .darling-h;
@@ -340,6 +354,10 @@ header.down{
 .media-img{
     @extend .sel-img;
     visibility: hidden;
+    img{
+        object-fit: cover;
+    }
+    
     @media (max-width: 968px){
         visibility: visible;
     }
@@ -399,6 +417,10 @@ header.down{
     &:hover{
         transform: scale(1.05);
         background-color: rgba(0, 0, 0, 0.856);
+    }
+    @media (max-width: 992px){
+        display: none;
+        visibility: hidden;
     }
 }
 .cortos{
