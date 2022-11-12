@@ -1,0 +1,118 @@
+.servicios{
+    background-color: #29323c;
+    min-height: 100vh;
+    max-height: 500vh;
+    text-decoration: none;
+    padding:  72px 0px;  // 75px 34px 8px 34px Mobile
+    @media (max-width: 1200px) {
+        min-height: 0vh;
+        padding: 72px 0px 10px;
+        
+    }
+    img{
+        min-width: 19vw;
+        max-width: 100%;
+        width:100vw; 
+        height: 85vh;
+        @media (max-width:1200px){
+            height: 80vh;
+        }
+        @media (max-width:576px){
+            height: 60vh;
+        }
+    }
+    
+}
+.pipol{
+    display: flex; 
+}
+.card {
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease-in;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        transform: scale(1.05);
+        -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.72);
+        -moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.72);
+        box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.72);
+        z-index: 100;
+        border-color: #000000;
+        p{
+            transform: scale(1);
+            visibility: visible;
+            top: 1.5em;
+            
+        }
+        img{
+            transform:translateX(.5rem) ;
+            opacity: .1;
+
+        }
+        
+    }
+    img{
+    height: 14em;
+    width: 100%;
+    transition: all .4s ease-in;
+    }
+    p{
+        visibility: hidden;
+        display: flex;
+        justify-content:center;
+        align-items: center; 
+        position: absolute;
+        transition: all .5s ease-in-out;
+        top: -15em;
+        height: 13em;
+        margin: 10px 10px;
+        padding: 10px 30px;
+        background-color: rgba(0, 255, 255, 0.338);
+        border-radius: 10px;
+        font-size: 1rem;
+        
+        @media (min-width:1200px){
+            padding: 15px 30px;
+            // font-size: 2rem;
+        }
+        @media (min-width:992px){
+            padding: 15px 30px;
+            // font-size: 2rem;
+        }
+        @media (min-width:768px){
+            padding: 15px 30px;
+            // font-size: 1rem;
+        }
+    }
+}
+
+.card-text:last-child {
+    margin: 15px;
+}
+.col-s{
+    width: 33.3%;
+    @media (max-width:992px){
+        width: 50%;
+    }
+    @media (max-width:768px){
+        width: 100%;
+    }
+}
+.row-s{
+    text-align: justify;
+    margin: 20px;
+    @media (max-width:768px){
+        margin: 0 7rem;
+    }
+    @media (max-width:576px){
+        margin: 20px;
+    }
+    h5{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}

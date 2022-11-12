@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image-store{
+    width: 40px;
+}
+.Store{
+    background-color: rgb(255, 145, 0);
+}
+.card-tienda{
+    border-radius: 10px solid black;
+}
+.icon-ej{
+    width: 20px;
+    img{
+        width: 2em;
+        height: 2em;
+    }
+}
+.se{
+    display: none;
+}

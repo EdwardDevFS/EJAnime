@@ -1,0 +1,140 @@
+
+.contenedor{
+    padding: 70px 0px 0;
+    
+    img,video{
+        width: 100%;
+        height: 37.5rem;
+        object-fit: cover;
+        @media (max-width: 768px){
+            height: 32.5rem;
+        }
+        @media (max-width: 576px){
+            height: 20.5rem;
+        }
+    }
+}
+        
+.productos {
+    min-height: 70vh;
+    max-height: 698vh;
+    margin:0px 20px 20px 0;
+    overflow:hidden;
+    display: flex;
+    gap: 10px;
+    @media (max-width: 1200px){
+        flex-direction: column;
+        margin: 0;
+    }
+    @media (max-width:576px){
+        margin: 0px 0 20px;
+    }
+}
+.subtitulo{
+    @extend .subtitle1;
+    margin: 0;
+    position: relative;
+    margin-top: 35px;
+    padding: 10px 20px;
+    
+}
+.prod-nav{
+    position: relative;
+    width: 100%;
+    background-color: #fff; 
+    @media (max-width: 1200px){
+        display: none;
+    }
+}
+.img-fluid{
+    object-fit: cover;
+}
+.card{
+	--bs-card-title-spacer-y: 0.1rem;
+    --bs-card-spacer-y: .5rem;
+    
+    --bs-card-border-radius: 1rem;
+}
+.card-title{
+    font-family: open sans,sans-serif;
+     font-weight: 700;
+                  
+}
+.row-p {
+    margin-top: 30px;
+    padding: 0 30px;
+    height: 68rem;
+    overflow: overlay;
+    background-color: rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    z-index: 1;
+    @media (max-width: 992px){
+        overflow: auto;
+    }
+    @media (max-width: 768px){
+        padding: 0px 10px 10px 20px;
+
+    }
+    
+    
+}
+.col {
+    flex: 1 0 auto;
+    width: 25%;
+    @media (max-width: 992px){
+        width: 33.3%;   
+    }
+    @media (max-width: 768px){
+        width: 50%;   
+    }
+    @media (max-width: 576px){
+        width: 100%;   
+    }
+}
+.card-prod{
+    overflow:hidden;
+    background-color: rgba(8, 7, 7, 0.658);
+    transition: all 0.5s ease;
+    &:hover{
+        
+        background-color: rgba(0, 196, 196, 0.808);
+        img{
+            transform: translateX(0) !important;
+            opacity: 1 !important;
+            
+        }
+    }
+    img{
+        width: 100%;
+        position: relative;
+        transition: 1s transform,  1s opacity ease-out;
+        opacity: .8;
+        
+        
+    }
+}
+.Prod-anime{
+    overflow:hidden;
+    &:hover img{
+        transform: scale(1.1);
+        opacity: 1 !important;   
+        
+    }
+}
+.Fondo{
+    width: 100%;
+    position: absolute;
+    height: 70.5rem;
+    @media (max-width:1200px){
+        height: 79rem;
+    }
+    @media (max-width:992px){
+        height: 79.12rem;
+    }
+    @media (max-width:768px){
+        height: 77.5rem;
+    }
+    @media (max-width:576px){
+        height: 78rem;
+    }
+}
