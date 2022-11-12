@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
@@ -827,20 +828,127 @@ img {
   display: none;
 }
 
+.titulo-login {
+  position: fixed;
+  width: 100%;
+  padding: 0.2em 0;
+  color: antiquewhite;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
+  background-color: #29323c;
+}
+
+.title-form-login {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
 .main-form {
+  margin: 2m;
+  position: absolute;
+}
+
+.content-form {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  background: #29323c;
+  background: linear-gradient(180deg, #29323c 38%, rgba(0, 248, 255, 0.8959755777) 65%);
 }
 
 .left-f {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50%;
 }
 
 .right-f {
-  background-color: aqua;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.218) 0%, rgba(0, 191, 255, 0.168) 100%), url(https://p4.wallpaperbetter.com/wallpaper/360/968/892/anime-original-building-city-original-anime-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-f h2 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.679);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+.mark-2 {
+  margin: 0px 50px;
+}
+
+.cuadro-form {
+  width: 35em;
+  height: 35em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-login {
+  margin-top: 15px;
+}
+
+.down-form {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em 0 0;
+}
+.down-form a {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.down-form small {
+  color: rgb(255, 255, 255);
+  margin-left: 4px;
+}
+.down-form small:hover {
+  color: rgb(193, 193, 193);
+}
+.down-form button {
+  margin-top: 1.5rem;
+  padding: 0.7em 2em;
+}
+
+.anime {
+  color: aqua;
+}
+
+.form-login {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.6352941176);
+  border-radius: 1em;
+}
+
+.input-form {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 0.3em;
+  border: 0 !important;
+  margin-top: 5px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.6352941176);
+}
+
+.form-input {
+  color: rgb(255, 255, 255);
+  border: 0;
 }
 
 * {

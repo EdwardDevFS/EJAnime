@@ -27,13 +27,3 @@ function(){
 })
 
 // TOAST 
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
-    console.log("no se puede")
-    toast.show()
-         }
-    )
-}
