@@ -832,14 +832,26 @@ img {
   position: fixed;
   width: 100%;
   padding: 0.2em 0;
-  color: antiquewhite;
-  font-size: 2.5em;
-  font-weight: bold;
   letter-spacing: 0.5px;
   -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.66);
   background-color: #29323c;
+}
+.titulo-login h1 {
+  color: antiquewhite;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.titulo-login button {
+  position: absolute;
+  padding: 0.5em 1.5rem;
+  margin: 15px 0 15px 30px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.titulo-login svg {
+  color: aliceblue;
 }
 
 .title-form-login {
@@ -970,11 +982,36 @@ img {
   background: rgba(34, 221, 250, 0.596);
 }
 
+ul {
+  align-items: center;
+}
+
 body {
   background-color: #29323c;
   --bs-body-font-size: 1.26rem;
   font-family: "Poppins";
   --bs-border-color: #ffffff1c;
+}
+
+.bot-nav-visible {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+@media (max-width: 991px) {
+  .bot-nav-visible {
+    display: none;
+  }
+}
+
+.novisible {
+  display: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+@media (max-width: 991px) {
+  .novisible {
+    display: block;
+  }
 }
 
 .modal {
@@ -1048,7 +1085,7 @@ header.down:hover {
 }
 
 .ul-nav {
-  margin-right: 2.5em;
+  margin-right: 1.5em;
 }
 @media (max-width: 991px) {
   .ul-nav {
@@ -1056,12 +1093,17 @@ header.down:hover {
     margin-right: 0;
   }
 }
+@media (max-width: 991px) {
+  .ul-nav li {
+    width: 100%;
+  }
+}
 .ul-nav a {
   position: relative;
   text-decoration: none;
   letter-spacing: 0.5px;
   padding: 0 10px;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 @media (max-width: 991px) {
   .ul-nav a {

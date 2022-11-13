@@ -33,13 +33,32 @@
     
     
 }
-
+ul{
+    align-items: center;
+    
+}
 body{
     background-color: #29323c;
     --bs-body-font-size: 1.26rem;
     font-family: 'Poppins';
     --bs-border-color: #ffffff1c;
     
+}
+.bot-nav-visible{
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    @media (max-width: 991px){
+        display: none;
+    }
+}
+.novisible{
+    display: none;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    @media (max-width: 991px){
+        display: block;
+    }
+
 }
 .modal{
     --bs-modal-header-border-width: 4px;
@@ -101,18 +120,23 @@ header.down{
     padding: 0;
 }
 .ul-nav{
-    margin-right: 2.5em;
+    margin-right: 1.5em;
     
     @media (max-width: 991px){
         margin-top: 15px;
         margin-right: 0;
+    }
+    li{
+        @media (max-width: 991px){
+            width: 100%;
+        }
     }
     a{
         position: relative;
         text-decoration: none;
         letter-spacing: 0.5px;
         padding: 0 10px;
-        margin: 0 10px;
+        margin: 0 15px;
         @media (max-width: 991px){
             text-align: center;
             margin: 7px 10px 8px;
