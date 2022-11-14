@@ -45,12 +45,17 @@
                 <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#">Registro</a>
               </li>
             </ul>
-            <a href="./login-form.html">
-              <button class="btn btn-outline-success bot-nav-visible me-5" type="button" id="boton-Ingresar">INGRESAR</button>
-            </a>
+            <div>
+              <a href="login-form.html">
+                <button class="btn btn-outline-success bot-nav-visible me-2" type="button" id="boton-Ingresar">INGRESAR</button>
+              </a>
+              <a href="nuevo.html">
+                <button class="btn btn-outline-danger bot-nav-visible me-5" type="button" id="boton-Ingresar">TOP ANIME</button>
+              </a>
+            </div>
           </div>
         </div>
     </nav>
@@ -84,7 +89,7 @@
           <div class="input-group has-validation">
             <input type="text" class="form-control text-bg-dark"
             id="validationCustomUsername"
-            aria-describedby="inputGroupPrepend" required 0>
+            aria-describedby="inputGroupPrepend" required>
             <div class="invalid-feedback">
               Por favor, escriba un usuario válido.
             </div>
@@ -99,28 +104,15 @@
         </div>
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">País</label>
-          <select class="form-select text-bg-dark" id="validationCustom04" required>
-            <option selected disabled value="">Elija...</option>
-            <option>Perú</option>
-            <option>Argentina</option>
-            <option>Otro.</option>
-          </select>
+          <input class="form-control text-bg-dark" id="validationCustom04" required>
           <div class="invalid-feedback">
             Por favor, elija un país.
           </div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Teléfono</label>
+          <label for="validationCustom05" class="form-label">Contraseña</label>
           <div class="input-group">
-            <span class="input-group-text"  id="inputGroupPrepend2">
-              <select class="form-select  text-bg-dark" id="validationCustom04" required>
-                <option selected disabled value="">+00</option>
-                <option>+51</option>
-                <option>+54</option>
-                <option>Otro.</option>
-              </select>
-            </span>
-            <input type="number" class="form-control text-bg-dark" id="validationCustom05" required>
+            <input type="password" class="form-control text-bg-dark" id="validationCustom05" required>
           </div>
           <div class="invalid-feedback">
             Por favor, introduzca un teléfono válido.
@@ -139,7 +131,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary bg-dark border-dark" type="submit">Submit form</button>
+          <button id="btn-register" class="btn btn-primary bg-dark border-dark" type="submit">Submit form</button>
           
         </div > 
       </form >
@@ -239,29 +231,8 @@
   </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="../JS/nav.js"></script>
-    <script defer>
-      (() => {
-        'use strict'
-      
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation')
-      
-        // Loop over them and prevent submission
-        Array.from(forms).forEach(form => {
-          form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-              
-            }
-            
-            form.classList.add('was-validated')
-            
-            
-          }, false)
-        })
-      })()
-  </script>
+    <script src="../JS/extra.js" defer></script>
+    <script src="../JS/registrar_usuario.js" defer></script>
+    <script src="../JS/users.js" defer></script>
   </body>
 </html>
