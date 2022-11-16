@@ -2,7 +2,7 @@
 
 
 // TODO: CONEXION CON API
-const anime = {
+const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '72ead2b4c7mshc59325b3d5216d8p12a096jsndf532bc6b5a3',
@@ -10,11 +10,10 @@ const anime = {
 	}
 };
 
-fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=20&sortBy=desc', anime)
+fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=20&sortBy=ranking&sortOrder=asc', options)
 	.then(response => response.json())
-	.then(data => mostrartop(data))
+	.then(response => mostrartop(response))
 	.catch(err => console.error(err));
-
 
 function traductor(datos){
     // TODO: CONEXION CON API DE TRADUCCION
