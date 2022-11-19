@@ -52,7 +52,8 @@ function Login(){
                         })
                     }
                     catch(e){
-                        alert("esto no esta bien")
+                        sessionStorage.setItem('logeado', true)
+                        window.location.href = "https://ejanime.netlify.app/index.html"
                     }
                     
                     // 
@@ -78,12 +79,13 @@ function Login(){
 
                     }
                     catch{
-                        confirm("algo ha salido mal")
+                        confirm("¿Deseas Registrarte?")
+                        console.log("Al parecer me arroja error con el sweet alert")
                     }
 
                     }
             }catch(e){
-                alert("ta bien")
+                console.log("error a nivel del if")
                 // if(correo_login.value == valores.email && password.value == valores.contraseña){
                 //     alert("Parece que sweet alert no me funciona, redireccionando...")
                 //     sessionStorage.setItem('logeado', true)
