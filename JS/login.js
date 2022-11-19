@@ -3,7 +3,7 @@ let correo_login = document.getElementById('validationCustom03');
 let password = document.getElementById('validationCustom05');
 let boton = document.getElementById('btn-login');
 
-import Swal from '../node_modules/sweetalert2/dist/sweetalert2.js'
+import Swal from 'sweetalert2.js'
 
 
 boton.addEventListener('click', () => {
