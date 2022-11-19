@@ -43,7 +43,6 @@ function traductor(datos){
 
 function mostrartop(datos){
     let todo = datos.data
-    traductor(todo[1])
     let body = '';  
     for (let i = 0; i < todo.length; i++) {
         const element = todo[i];

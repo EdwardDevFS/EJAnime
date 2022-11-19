@@ -28,8 +28,8 @@
       <nav class="navbar navbar-dark  navbar-expand-lg ">
           <div class="container-fluid">
             <a class="navbar-brand  ms-5 mt-1" href="#"><h2 class="title">EJ <span>ANIME</span></h2></a>
-            <a class="novisible" href="secciones/login-form.html">
-              <button class="btn btn-outline-success bot-nav mx-5 px-5" type="button" id="boton-Ingresar">INGRESAR</button>
+            <a class="novisible  " id="logged" href="secciones/login-form.html">
+              <button class="btn btn-outline-success bot-nav mx-5 px-5 " type="button" id="boton-Ingresar">INGRESAR</button>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,17 +46,33 @@
                 <li class="nav-item">
                   <a class="nav-link" href="./secciones/productos.html">Productos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  " id="logged" >
                   <a class="nav-link" href="./secciones/contacto.html">Registro</a>
                 </li>
               </ul>
-              <div>
-                <a href="secciones/login-form.html">
-                  <button class="btn btn-outline-success bot-nav-visible me-2" type="button" id="boton-Ingresar">INGRESAR</button>
+              <div class="d-flex">
+                <a class="" id="logged" href="secciones/login-form.html">
+                  <button class="btn btn-outline-success bot-nav-visible me-2 " type="button" id="boton-Ingresar">INGRESAR</button>
                 </a>
                 <a href="secciones/nuevo.html">
                   <button class="btn btn-outline-danger bot-nav-visible me-5" type="button" id="boton-Ingresar">TOP ANIME</button>
                 </a>
+                <div class="d-flex logged-user " id="no_log" >
+                  <!-- <div class="nav-link dropdown-toggle d-flex logged-user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                    <div class="logged-icon " >
+                      <img src="./img/pngegg.png" alt="">
+                    </div>
+                    <div class="nav-link dropdown-toggle dropdown " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span id="user"></span>
+                      <ul class="dropdown-menu dropdown-menu-dark text-dark ">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="secciones/nuevo.html">Ver Top Anime</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="index.html" id="logout">Salir</a></li>
+                      </ul>
+                    <!-- </div> -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -128,11 +144,11 @@
               <a class="sel-img" href="https://www.youtube.com/watch?v=6V_0lKxZ5AQ">
                 <img src="../img/darling1.png" alt="" class="sel-img">
                 <div class="darling">
-                   <h2>Darling in the franxx</h2>
-                   <div class="darling-h">
+                  <h2>Darling in the franxx</h2>
+                  <div class="darling-h">
                     <h6>TEMPORADAS: 1</h6>
                     <h6>GÉNERO: <br><span class="genero">Acción, drama, ciencia ficción, romance, tragedia.</span> </h6>
-                   </div>
+                  </div>
                 </div>     
               </a> 
             </div>
@@ -144,10 +160,10 @@
                     <div class="konosuba">
                       <h2>KONOSUBA</h2>
                       <div class="konosuba-h">
-                       <h6>TEMPORADAS: 2</h6>
-                       <h6>GÉNERO: <br><span class="genero">- Comedia cinematográfica<br>- Fantasía<br>- Sobrenatural<br>- Isekai<br>- Aventura</span> </h6>
-                      </div>
-                   </div> 
+                      <h6>TEMPORADAS: 2</h6>
+                      <h6>GÉNERO: <br><span class="genero">- Comedia cinematográfica<br>- Fantasía<br>- Sobrenatural<br>- Isekai<br>- Aventura</span> </h6>
+                    </div>
+                  </div> 
                 </a>
             </div>
             <div class="elemento3 elemento">
@@ -156,24 +172,24 @@
                     <div class="sentouin">
                       <h2>Sentouin hakenshimasu!</h2>
                       <div class="sentouin-h">
-                       <h6>TEMPORADAS: 1</h6>
-                       <h6>EPISODIOS: 12</h6>
-                       <h6>GÉNERO: <br><span class="genero">Acción, aventura, comedia, fantasía, ciencia ficción, <br> isekai</span> </h6>
+                        <h6>TEMPORADAS: 1</h6>
+                        <h6>EPISODIOS: 12</h6>
+                        <h6>GÉNERO: <br><span class="genero">Acción, aventura, comedia, fantasía, ciencia ficción, <br> isekai</span> </h6>
                       </div>
-                   </div> 
+                    </div> 
                 </a>
             </div>
             <div class="elemento4 elemento">
                 <a class="sel-img"
-                 href="https://www.youtube.com/watch?v=D5IuR4b_Kng">
+                  href="https://www.youtube.com/watch?v=D5IuR4b_Kng">
                     <img src="../img/shindeiru.png" alt="" class="sel-img">
                     <div class="tantei">
                       <h2>Tantei mō Shindeiru</h2>
                       <div class="tantei-h">
-                       <h6>TEMPORADAS: 1</h6>
-                       <h6>GÉNERO: <br><span class="genero">Comedia romántica,​ drama, fantasía, misterio</span> </h6>
+                        <h6>TEMPORADAS: 1</h6>
+                        <h6>GÉNERO: <br><span class="genero">Comedia romántica,​ drama, fantasía, misterio</span> </h6>
                       </div>
-                   </div> 
+                    </div> 
                 </a>
             </div>
             
@@ -203,6 +219,8 @@
 
     <!-- JavaScript Para el navbar -->
     <script src="./JS/extra.js" defer></script>
-    <script src="./JS/conexion.js"></script>
+    <script >
+      
+    </script>
   </body>
 </html>

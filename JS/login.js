@@ -1,29 +1,79 @@
-let correo_login = document.getElementById('floatingInput');
-let password = document.getElementById('floatingPassword');
-let btn = document.getElementById('btnSave');
+
+let correo_login = document.getElementById('validationCustom03');
+let password = document.getElementById('validationCustom05');
+let boton = document.getElementById('btn-login');
 
 
-btn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    Login();
-})
+
+boton.addEventListener('click', () => {
+        Login();
+    })
+    
 
 function Login(){
-    // let asd = sessionStorage.key()
-    try{
-
-        let asd1 = sessionStorage.getItem(correo_login.value)
-        
-        if(asd1 == password.value){
-            window.location.href = "http://127.0.0.1:5500/index.html"
+    const forms = document.querySelectorAll('.needs-validation')
+    
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            
+            
         }
         else{
-            alert("Credenciales invalidas")
+            event.preventDefault()
+            let val = localStorage.getItem('Usuarios')
+            let valores = JSON.parse(val);
+
+            if(correo_login.value == valores.email && password.value == valores.contraseña){
+                let timerInterval
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Credenciales correctas',
+                    timer: 1500,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        const b = Swal.getHtmlContainer().querySelector('b')
+                        timerInterval = setInterval(() => {
+                        b.textContent = Swal.getTimerLeft()
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                    }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        sessionStorage.setItem('logeado', true)
+                        window.location.href = "https://ejanime.netlify.app/index.html"
+                    }
+                })
+                // 
+                
+                // 
+            }
+            else{
+                Swal.fire({
+                    title: 'Credenciales Invalidas',
+                    text: 'Correo electronico o contraseña errónea',
+                    icon: 'error',
+                    confirmButtonText: 'Ir a Registrarse',
+                    showDenyButton: true,
+                    denyButtonText: `Intentar de nuevo`,
+
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.href = "https://ejanime.netlify.app/secciones/contacto.html"
+                    }
+                  })
+            }
+                
+
         }
-    }
-    catch(e){
-        alert("algo anda mal")
-    }
-    // console.log(asd)
-    
+        form.classList.add('was-validated')
+        }, false)
+    })
 }

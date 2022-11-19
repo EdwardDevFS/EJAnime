@@ -16,7 +16,6 @@ class Users{
         this.contraseña = contraseña;
         this.pais = pais;
         this.telefono = telefono;
-
     }
     
 }

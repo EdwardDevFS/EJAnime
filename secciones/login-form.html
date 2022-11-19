@@ -11,7 +11,9 @@
     <!--Link CDN Icons-->
     <link rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!--Link css-->
+    <!--Link css--> 
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+
     <link rel="stylesheet" href="../estilos/styles.css">
     <!--Box icons-->
     <link rel="icon" type="image/ico" href="../img/a2.png">
@@ -29,21 +31,24 @@
             <div class="left-f">
                 <div class="cuadro-form">
                     <div class="form-login">
-                        <form action="" class="" >
+                        <form class="needs-validation"  novalidate>
                             <div class="intro-form m-2 p-4">
                                 <h2 class="title-form-login text-center">Ingr<span class="anime">esar</span></h2>
                                 <br>
                                 <div class="form-input mb-3">
                                     <label for="floatingInput">Correo Electrónico</label>
-                                    <input type="email" class="input-form text-bg-dark" id="floatingInput" placeholder="E-mail">
+                                    <!-- <input type="email" class="input-form text-bg-dark" id="floatingInput" placeholder="E-mail"> -->
+                                    <input type="text" class="form-control text-bg-dark input-form" id="validationCustom03" required>
                                 </div>
                                 <div class="form-input">
                                     <label for="floatingPassword ">Contraseña</label>
-                                    <input type="password" class="input-form text-bg-dark " id="floatingPassword" placeholder="Password">
+                                    <!-- <input type="password" class="input-form text-bg-dark " id="floatingPassword" placeholder="Password"> -->
+                                    <input type="password" class="form-control text-bg-dark input-form" id="validationCustom05" required>
                                 </div>
                                 <div class="mt-2 d-flex down-form">
                                     <a href="contacto.html"><small>Olvide mi contraseña</small></a>
-                                    <button type="submit" id="btnSave" class="btn btn-dark boton-login ">Ingresar</button>
+                                    <!-- <button type="submit" id="btnSave" class="btn btn-dark boton-login ">Ingresar</button> -->
+                                    <button id="btn-login" class="btn btn-dark boton-login" type="submit">Submit form</button>
                                 </div>
                             </div>
                         </form>
@@ -58,8 +63,9 @@
 
         </div>
     </main>
-
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="../JS/extra.js" defer></script>
     <script src="../JS/login.js" defer></script>
+
 </body>
 </html>

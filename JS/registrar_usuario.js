@@ -14,10 +14,6 @@ localStorage.setItem("ID", 0)
 
 // VALIDACION DE FORM REGISTER
 boton_Registrar.addEventListener('click', validar())
-btn.addEventListener('click', (e) =>{
-    e.preventDefault()
-    Login();
-})
 function validar(){
     const forms = document.querySelectorAll('.needs-validation')
 
@@ -51,7 +47,9 @@ function Register() {
     
     localStorage.setItem("Usuarios", persona)
     sessionStorage.setItem(email.value, contraseña.value);
-    clear()
+    clear() 
+    
+
     // console.log(localStorage.getItem("i"));
     // localStorage.setItem("i", contraseñas);
     
