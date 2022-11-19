@@ -28,8 +28,8 @@ function(){
 //TODO RESOLVIENDO PROBLEMAS CON EL LOGIN
 
 logout.addEventListener('click', () =>{
-sessionStorage.setItem('logeado', false);
-window.location.reload();
+    sessionStorage.setItem('logeado', false);
+    window.location.reload();
 })
 
 if(log == 'true'){
