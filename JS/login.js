@@ -17,8 +17,7 @@ function Login(){
         if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
-            
-            
+            alert()
         }
         else{
             event.preventDefault()
@@ -27,60 +26,72 @@ function Login(){
             
             try{
                 if(correo_login.value == valores.email && password.value == valores.contraseña){
-                    let timerInterval
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Credenciales correctas',
-                        timer: 1500,
-                        timerProgressBar: true,
-                        didOpen: () => {
-                            Swal.showLoading()
-                            const b = Swal.getHtmlContainer().querySelector('b')
-                            timerInterval = setInterval(() => {
-                            b.textContent = Swal.getTimerLeft()
-                            }, 100)
-                        },
-                        willClose: () => {
-                            clearInterval(timerInterval)
-                        }
-                        }).then((result) => {
-                        /* Read more about handling dismissals below */
-                        if (result.dismiss === Swal.DismissReason.timer) {
-                            sessionStorage.setItem('logeado', true)
-                            window.location.href = "https://ejanime.netlify.app/index.html"
-                        }
-                    })
+                    try{
+                        let timerInterval
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Credenciales correctas',
+                            timer: 1500,
+                            timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                const b = Swal.getHtmlContainer().querySelector('b')
+                                timerInterval = setInterval(() => {
+                                b.textContent = Swal.getTimerLeft()
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                            }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                sessionStorage.setItem('logeado', true)
+                                window.location.href = "https://ejanime.netlify.app/index.html"
+                            }
+                        })
+                    }
+                    catch(e){
+                        alert("esto no esta bien")
+                    }
                     
                     // 
                     
                     // 
                 }
                 else{
-                    Swal.fire({
-                        title: 'Credenciales Invalidas',
-                        text: 'Correo electronico o contraseña errónea',
-                        icon: 'error',
-                        confirmButtonText: 'Ir a Registrarse',
-                        showDenyButton: true,
-                        denyButtonText: `Intentar de nuevo`,
-    
-                    }).then((result) => {
-                        /* Read more about isConfirmed, isDenied below */
-                        if (result.isConfirmed) {
-                            window.location.href = "https://ejanime.netlify.app/secciones/contacto.html"
-                        }
-                    })
-                }
+                    try{
+                        Swal.fire({
+                            title: 'Credenciales Invalidas',
+                            text: 'Correo electronico o contraseña errónea',
+                            icon: 'error',
+                            confirmButtonText: 'Ir a Registrarse',
+                            showDenyButton: true,
+                            denyButtonText: `Intentar de nuevo`,
+        
+                        }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                window.location.href = "https://ejanime.netlify.app/secciones/contacto.html"
+                            }
+                        })
+
+                    }
+                    catch{
+                        confirm("algo ha salido mal")
+                    }
+
+                    }
             }catch(e){
                 alert("ta bien")
-                if(correo_login.value == valores.email && password.value == valores.contraseña){
-                    alert("Parece que sweet alert no me funciona, redireccionando...")
-                    sessionStorage.setItem('logeado', true)
-                    window.location.href = "https://ejanime.netlify.app/index.html"
-                }
-                else{
-                    confirm("Parece que las credenciales son erróneas")
-                }
+                // if(correo_login.value == valores.email && password.value == valores.contraseña){
+                //     alert("Parece que sweet alert no me funciona, redireccionando...")
+                //     sessionStorage.setItem('logeado', true)
+                //     window.location.href = "https://ejanime.netlify.app/index.html"
+                // }
+                // else{
+                //     confirm("Parece que las credenciales son erróneas")
+                // }
             }
                 
 
