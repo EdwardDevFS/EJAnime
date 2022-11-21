@@ -5,7 +5,7 @@ let user_data = document.getElementById('user');
 let val = localStorage.getItem('Usuarios')
 let valores = JSON.parse(val);
 let logout = document.getElementById('logout');
-sessionStorage.setItem('logeado', false);
+
 
 const toastTrigger = document.getElementById('liveToastBtn')
         const toastLiveExample = document.getElementById('liveToast')

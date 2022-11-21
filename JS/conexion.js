@@ -42,39 +42,71 @@ function traductor(datos){
 }
 
 function mostrartop(datos){
-    let todo = datos.data
-    let body = '';  
-    for (let i = 0; i < todo.length; i++) {
-        const element = todo[i];
-        traductor(element.status);
-        body += 
-        `<div class="anime-top-card">
-            <div class="top-card">
-                <div class="anime">
-                    <div id="todo1" class="anime-position">
-                        <div class="">${element.ranking}</div>
+    Swal.fire({
+        title: 'Esperando a la API',
+        html: 'Espere un momento por favor...',
+        timer: 2000,
+        timerProgressBar: true,
+        width: 600,
+        padding: '3em',
+        color: '#716add',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+            rgba(0,0,123,0.4)
+
+            
+        `,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+        })
+    setTimeout(() => {
+        let todo = datos.data
+        let body = '';  
+        for (let i = 0; i < todo.length; i++) {
+            const element = todo[i];
+            traductor(element.status);
+            body += 
+            `<div class="anime-top-card">
+                <div class="top-card">
+                    <div class="anime">
+                        <div id="todo1" class="anime-position">
+                            <div class="">${element.ranking}</div>
+                        </div>
+                        <img src=${element.image} alt="">
                     </div>
-                    <img src=${element.image} alt="">
-                </div>
-                <div class="right-anime">
-                    <div class="status-anime float-end mt-2 me-2">
-                        <div class="status">${element.status}</div>
-                    </div>
-                    <div class="encabezado mt-1">
-                        <div class="title-anime">
-                            <h2>${element.title}</h2>
+                    <div class="right-anime">
+                        <div class="status-anime float-end mt-2 me-2">
+                            <div class="status">${element.status}</div>
+                        </div>
+                        <div class="encabezado mt-1">
+                            <div class="title-anime">
+                                <h2>${element.title}</h2>
+                            </div>
+                        </div>
+                        <div class="card-anime-body">
+                            <h3>${element.alternativeTitles}</h3>
+                            <h4>GENERO: ${element.genres}</h4>
+                            <p>${element.synopsis}</p>
                         </div>
                     </div>
-                    <div class="card-anime-body">
-                        <h3>${element.alternativeTitles}</h3>
-                        <h4>GENERO: ${element.genres}</h4>
-                        <p>${element.synopsis}</p>
-                    </div>
                 </div>
-            </div>
-        </div>`
-        document.getElementById('deaca').innerHTML = body
-    }
+            </div>`
+            document.getElementById('deaca').innerHTML = body
+        }
+    },2000)
 
     
 }
