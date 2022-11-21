@@ -23,19 +23,20 @@
     <!-- data-bs-toggle="modal" data-bs-target="#staticBackdrop"-->
     
     <header>
-      <nav class="navbar navbar-dark navbar-expand-lg ">
+      <nav class="navbar navbar-dark  navbar-expand-lg ">
           <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="../index.html"><h2 class="title">EJ <span>ANIME</span></h2></a>
-            <a class="novisible" href="./login-form.html">
-              <button class="btn btn-outline-success bot-nav mx-5 px-5" type="button" id="boton-Ingresar">INGRESAR</button>
-            </a>        
+            <a class="navbar-brand  ms-5 mt-1" href="../index.html"><h2 class="title">EJ <span>ANIME</span></h2></a>
+            <a class="novisible  " id="logged" href="login-form.html">
+              <button class="btn btn-outline-success bot-nav mx-5 px-5 " type="button" id="boton-Ingresar">INGRESAR</button>
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto ul-nav">
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ms-auto ul-nav ">
                 <li class="nav-item">
-                  <a class="nav-link "aria-current="page" href="info.html">Información</a>
+                  <a class="nav-link"aria-current="page" href="info.html">Información</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Servicios</a>
@@ -43,17 +44,33 @@
                 <li class="nav-item">
                   <a class="nav-link" href="productos.html">Productos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Registro</a>
+                <li class="nav-item  " id="logged" >
+                  <a class="nav-link" href="registro.html">Registro</a>
                 </li>
               </ul>
-              <div>
-                <a href="login-form.html">
-                  <button class="btn btn-outline-success bot-nav-visible me-2" type="button" id="boton-Ingresar">INGRESAR</button>
+              <div class="d-flex">
+                <a class="" id="logged" href="login-form.html">
+                  <button class="btn btn-outline-success bot-nav-visible me-2 " type="button" id="boton-Ingresar">INGRESAR</button>
                 </a>
                 <a href="nuevo.html">
                   <button class="btn btn-outline-danger bot-nav-visible me-5" type="button" id="boton-Ingresar">TOP ANIME</button>
                 </a>
+                <div class="d-flex logged-user " id="no_log" >
+                  <!-- <div class="nav-link dropdown-toggle d-flex logged-user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                    <div class="logged-icon " >
+                      <img src="../img/pngegg.png" alt="">
+                    </div>
+                    <div class="nav-link dropdown-toggle dropdown " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span id="user"></span>
+                      <ul class="dropdown-menu dropdown-menu-dark text-dark ">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="nuevo.html">Ver Top Anime</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../index.html" id="logout">Salir</a></li>
+                      </ul>
+                    <!-- </div> -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -249,6 +266,7 @@
     </footer>
       <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="../JS/nav.js"></script>
+      <!-- JAVASCRIPT PARA NAVBAR -->
+    <script src="../JS/extra.js"></script>
   </body>
 </html>
