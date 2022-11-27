@@ -73,7 +73,7 @@ function Login(){
                         }).then((result) => {
                             /* Read more about isConfirmed, isDenied below */
                             if (result.isConfirmed) {
-                                window.location.href = "https://ejanime.netlify.app/secciones/contacto.html"
+                                window.location.href = "https://ejanime.netlify.app/secciones/registro.html"
                             }
                         })
 
